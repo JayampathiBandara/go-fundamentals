@@ -4,6 +4,13 @@
 
 ## Understand the pass by value and pass by reference and dereference when read [else return memory address]
 
+## Define 4 Aggregate types
+
+- Array
+- Slice
+- Map
+- Struct
+
 Define new pointer variables
 
 ## Commands to create project

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go-fundamentals/aggregatedatatype"
 	"go-fundamentals/common"
 	"go-fundamentals/pointers"
 )
@@ -37,4 +38,11 @@ func main() {
 	pointers.UpdateOriginalValue(9000)
 	pointers.Printvariables("AFTER Second time update")
 	common.PrintLine("=")
+
+	aggregatedatatype.ArrayDeclaration()
+	aggregatedatatype.SliceDeclaration()
+	aggregatedatatype.MapDeclaration()
+	aggregatedatatype.VarStructDeclaration()
+	aggregatedatatype.TypeStructDeclaration()
+
 }
