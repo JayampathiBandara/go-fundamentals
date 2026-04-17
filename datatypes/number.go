@@ -2,6 +2,7 @@ package datatypes
 
 import (
 	"fmt"
+	"go-fundamentals/common"
 	"math"
 )
 
@@ -11,11 +12,13 @@ const Height float32 = 1.44 // m
 var Weight int = 100        // Kg
 
 func init() {
-	println("\nInitializing numbers package\n------------------------------")
+	println("\nInitializing numbers package")
+	common.PrintLine("_")
 }
 
 func PrintNumbers() {
-	fmt.Println("\nNumbers Demo\n------------------------------")
+	fmt.Println("\nNumbers Demo")
+	common.PrintLine("_")
 	println("Age (numbers): ", Age)
 	println("Height (numbers): ", Height)
 	println("Weight (numbers): ", Weight)

@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"go-fundamentals/datatypes"
+	"go-fundamentals/common"
+	"go-fundamentals/pointers"
 )
 
 func init() {
@@ -21,8 +22,19 @@ func main() {
 	// use packages to call functions
 	fmt.Println("Happy New Year - 2026")
 
-	datatypes.PrintStrings()
-	datatypes.PrintNumbers()
-	fmt.Println("Error Message :", datatypes.PrintError(0))
-	datatypes.PrintBools()
+	/*
+		datatypes.PrintStrings()
+		datatypes.PrintNumbers()
+		fmt.Println("Error Message :", datatypes.PrintError(0))
+		datatypes.PrintBools()
+	*/
+	common.PrintLine("=")
+	println("values Pass by reference is chaged ufter each update")
+	println("But Value pass as a value doesn't change as it is bind at compile time")
+	pointers.Printvariables("BEFORE update")
+	pointers.UpdateOriginalValue(1000)
+	pointers.Printvariables("AFTER update")
+	pointers.UpdateOriginalValue(9000)
+	pointers.Printvariables("AFTER Second time update")
+	common.PrintLine("=")
 }
