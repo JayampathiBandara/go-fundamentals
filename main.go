@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"go-fundamentals/aggregatedatatype"
 	"go-fundamentals/common"
+	"go-fundamentals/controlflow"
 	"go-fundamentals/pointers"
 )
 
@@ -44,5 +45,8 @@ func main() {
 	aggregatedatatype.MapDeclaration()
 	aggregatedatatype.VarStructDeclaration()
 	aggregatedatatype.TypeStructDeclaration()
+
+	common.PrintLine("*")
+	controlflow.ForLoop()
 
 }
