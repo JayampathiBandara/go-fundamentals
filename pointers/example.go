@@ -3,6 +3,7 @@ package pointers
 import "go-fundamentals/common"
 
 var originalValue int = 10
+var pointerVariable = new(int)
 
 var pointerToValue = &originalValue
 
@@ -15,6 +16,8 @@ func Printvariables(status string) {
 	println("\nPointers Demo :", status)
 	common.PrintLine("-")
 	println("Original Value: ", originalValue)
+	println("Pointer Variable: ", pointerVariable)
+	println("Pointer Variable: (dereference)", *pointerVariable)
 	println("Pointer to Value: ", pointerToValue)
 	println("Pointer to Pointer: ", pointerToPointer)
 	println("Pointer to Value (Use * to Dereference Value): ", *pointerToValue)
@@ -26,4 +29,8 @@ func Printvariables(status string) {
 
 func UpdateOriginalValue(newValue int) {
 	originalValue = newValue
+
+	// Update the pointer variable to point to the new value. can't assign value directly to pointer variable,
+	// we need to assign the address of the new value to the pointer variable.
+	pointerVariable = &newValue
 }

@@ -4,6 +4,8 @@
 
 ## Understand the pass by value and pass by reference and dereference when read [else return memory address]
 
+Define new pointer variables
+
 ## Commands to create project
 
 - go mod init go-fundamentals
